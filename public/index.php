@@ -24,7 +24,14 @@ use App\Controllers\ReadController;
     $teste = new BibliaDev();
     $teste -> nomePasta();*/
 
-    require_once '../config.php';
+    require_once __DIR__ . '/vendor/autoload.php';
+    if (file_exists(__DIR__ . '/.env')) {
+        $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+        $dotenv->load();
+    }
+
+    $apiKey = $_ENV['API_TOKEN'] ?? getenv('API_TOKEN');
+    
     spl_autoload_register(function ($className) {
         $caminhoArquivo = str_replace ('\\', '/', $className);
 

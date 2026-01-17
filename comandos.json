@@ -1,4 +1,0 @@
-{
-    "comando_tail_local" : "./tailwindcss -i ./src/input.css -o ./public/css/style.css --watch",
-    
-}
