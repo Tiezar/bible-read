@@ -3,12 +3,13 @@
     use App\Models\BibleService;
     use App\Config\Plan;
     class ReadController {
-        public function index() {
+        public function index() {            
+
             $dataHoje = date("m-d");
             $plan = new Plan();           
             $dadosArray = $plan -> diario($dataHoje);
 
-            #var_dump($dataHoje);
+            var_dump($dataHoje);
             
             if (!isset($dadosArray)) {
                 $vazio = "Nada para ler hoje :)";

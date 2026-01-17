@@ -1,3 +1,0 @@
-<?php
-    define('API_TOKEN', 'YOUR_TOKEN_HERE');
-?>
