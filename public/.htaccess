@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    Options -MultiViews
+    RewriteEngine On
+
+    # Se o arquivo existir (ex: style.css), serve ele direto
+    RewriteCond %{REQUEST_FILENAME} !-f
+    # Se a pasta existir, serve ela direto
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Se não existir, manda TUDO pro index.php
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>

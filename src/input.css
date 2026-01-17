@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Se quiser adicionar CSS personalizado global, põe aqui embaixo */
+body {
+    background-color: #f3f4f6; /* Um cinza suave pra começar */
+}
