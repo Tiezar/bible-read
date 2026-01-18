@@ -31,7 +31,7 @@ use App\Controllers\ReadController;
 
     require dirname(__DIR__) . '/App/Config/config.php';
     
-    spl_autoload_register(function ($className) {
+    /*spl_autoload_register(function ($className) {
         $caminhoArquivo = str_replace ('\\', '/', $className);
 
         $arquivoFinal = __DIR__ . '/../' . $caminhoArquivo . '.php';
@@ -42,11 +42,11 @@ use App\Controllers\ReadController;
             #echo "Arquivo Não encontrado: $arquivoFinal";
             die();
         }
-    }); #AUTOLOADER MANUAL
+    }); #AUTOLOADER MANUAL*/
 
     $routes = [
-        '/home' => 'App\Controllers\HomeController',
-        '/' => 'App\Controllers\ReadController'
+        '/' => 'App\Controllers\HomeController',
+        '/leitura' => 'App\Controllers\ReadController'
     ];
 
     $urlBase = $_SERVER['REQUEST_URI'];
