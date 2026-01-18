@@ -45,8 +45,8 @@ use App\Controllers\ReadController;
     }); #AUTOLOADER MANUAL
 
     $routes = [
-        '/' => 'App\Controllers\HomeController',
-        '/leitura' => 'App\Controllers\ReadController'
+        '/home' => 'App\Controllers\HomeController',
+        '/' => 'App\Controllers\ReadController'
     ];
 
     $urlBase = $_SERVER['REQUEST_URI'];

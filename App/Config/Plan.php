@@ -10,8 +10,8 @@
                     ['versao' => $versao , 'livro' => 'gn', 'capitulo' => '36'],
                 ],
                 "01-18" => [
-                    ['versao' => $versao , 'livro' => '', 'capitulo' => ''],
-                    ['versao' => $versao , 'livro' => '', 'capitulo' => ''],
+                    ['versao' => $versao , 'livro' => 'gn', 'capitulo' => '40'],
+                    ['versao' => $versao , 'livro' => 'gn', 'capitulo' => '41'],
                 ],
                 "01-19" => [
                     ['versao' => $versao , 'livro' => '', 'capitulo' => ''],
