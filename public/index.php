@@ -27,7 +27,7 @@ use App\Controllers\ReadController;
     require dirname(__DIR__) . '/vendor/autoload.php';
 
     $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
-    $dotenv->load();
+    $dotenv->safeLoad();
 
     require dirname(__DIR__) . '/App/Config/config.php';
     
